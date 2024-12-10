@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/projeto-studio-amanda/static/css/main.8c8a1d0e.css",
+    "main.css": "/projeto-studio-amanda/static/css/main.b0fc5ed4.css",
     "main.js": "/projeto-studio-amanda/static/js/main.fa2ebbdf.js",
     "static/js/488.1c383460.chunk.js": "/projeto-studio-amanda/static/js/488.1c383460.chunk.js",
     "static/media/photo-intro.png": "/projeto-studio-amanda/static/media/photo-intro.6bb3a966853bdd091fcb.png",
@@ -33,12 +33,12 @@
     "static/media/instagram.svg": "/projeto-studio-amanda/static/media/instagram.ece17d286f23a5138238291099879949.svg",
     "index.html": "/projeto-studio-amanda/index.html",
     "static/media/facebook.svg": "/projeto-studio-amanda/static/media/facebook.e2cd2868fd0b34db7879e03469b61345.svg",
-    "main.8c8a1d0e.css.map": "/projeto-studio-amanda/static/css/main.8c8a1d0e.css.map",
+    "main.b0fc5ed4.css.map": "/projeto-studio-amanda/static/css/main.b0fc5ed4.css.map",
     "main.fa2ebbdf.js.map": "/projeto-studio-amanda/static/js/main.fa2ebbdf.js.map",
     "488.1c383460.chunk.js.map": "/projeto-studio-amanda/static/js/488.1c383460.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c8a1d0e.css",
+    "static/css/main.b0fc5ed4.css",
     "static/js/main.fa2ebbdf.js"
   ]
 }
