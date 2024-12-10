@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/projeto-studio-amanda/static/css/main.aa1bea2e.css",
-    "main.js": "/projeto-studio-amanda/static/js/main.8bf9d189.js",
+    "main.css": "/projeto-studio-amanda/static/css/main.8c8a1d0e.css",
+    "main.js": "/projeto-studio-amanda/static/js/main.fa2ebbdf.js",
     "static/js/488.1c383460.chunk.js": "/projeto-studio-amanda/static/js/488.1c383460.chunk.js",
     "static/media/photo-intro.png": "/projeto-studio-amanda/static/media/photo-intro.6bb3a966853bdd091fcb.png",
     "static/media/photo-gallery-h5.png": "/projeto-studio-amanda/static/media/photo-gallery-h5.8982168cb35333a8dd0a.png",
@@ -27,17 +27,18 @@
     "static/media/footer-awards-2023.png": "/projeto-studio-amanda/static/media/footer-awards-2023.6d2c2ca79d5ae74d79a5.png",
     "static/media/footer-awards-2022.png": "/projeto-studio-amanda/static/media/footer-awards-2022.01fe45fa2df80c697715.png",
     "static/media/footer-awards-2024.png": "/projeto-studio-amanda/static/media/footer-awards-2024.dcde3064a92653b6d252.png",
+    "static/media/footer-awards-2021.png": "/projeto-studio-amanda/static/media/footer-awards-2021.c135e74deec59ae1022a.png",
     "static/media/logo.png": "/projeto-studio-amanda/static/media/logo.ac9905c176906657a3a7.png",
     "static/media/whatsapp.svg": "/projeto-studio-amanda/static/media/whatsapp.60b26700f9f53f3d8932122fa6470c11.svg",
     "static/media/instagram.svg": "/projeto-studio-amanda/static/media/instagram.ece17d286f23a5138238291099879949.svg",
     "index.html": "/projeto-studio-amanda/index.html",
     "static/media/facebook.svg": "/projeto-studio-amanda/static/media/facebook.e2cd2868fd0b34db7879e03469b61345.svg",
-    "main.aa1bea2e.css.map": "/projeto-studio-amanda/static/css/main.aa1bea2e.css.map",
-    "main.8bf9d189.js.map": "/projeto-studio-amanda/static/js/main.8bf9d189.js.map",
+    "main.8c8a1d0e.css.map": "/projeto-studio-amanda/static/css/main.8c8a1d0e.css.map",
+    "main.fa2ebbdf.js.map": "/projeto-studio-amanda/static/js/main.fa2ebbdf.js.map",
     "488.1c383460.chunk.js.map": "/projeto-studio-amanda/static/js/488.1c383460.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa1bea2e.css",
-    "static/js/main.8bf9d189.js"
+    "static/css/main.8c8a1d0e.css",
+    "static/js/main.fa2ebbdf.js"
   ]
 }
