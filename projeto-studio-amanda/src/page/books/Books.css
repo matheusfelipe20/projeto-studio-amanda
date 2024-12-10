@@ -1,0 +1,49 @@
+.section-books {
+    padding: 100px 60px 0px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.books-title {
+    text-align: center;
+}
+
+.books-title h1{
+    color: var(--color-primary);
+    font-size: 2.4rem;
+    letter-spacing: 0.2rem;
+}
+
+.books-title p {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-top: -30px;
+    margin-bottom: 0px;
+}
+
+.book-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.book-photo-horizontal {
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+}
+
+.book-panel > div {
+    display: grid;
+    grid-template-columns: repeat(2, 270px);
+    gap: 10px;
+    justify-content: center;
+}

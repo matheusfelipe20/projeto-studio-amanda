@@ -1,6 +1,6 @@
 import React from 'react';
 import './Introduction.css';
-import introPhoto from '../../../assets/img/photo-intro.png';
+import introPhoto from '../../../assets/img/photo-intro.webp';
 
 const Introduction = () => (
     <div className="intro-container">

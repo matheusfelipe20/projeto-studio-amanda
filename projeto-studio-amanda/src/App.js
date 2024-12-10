@@ -1,6 +1,6 @@
 import './App.css';
 import './variables/Colors.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
 import Header from './page/home/header/Header';
 import Introduction from './page/home/introduction/Introduction';
@@ -13,29 +13,37 @@ import Footer from './page/home/footer/Footer';
 import Books from './page/books/Books';
 
 function App() {
-    return (
-        <Router>
-            <div className="App">
-                <Header />
-                <Routes>
-                    <Route
-                        path="/"
-                        element={
-                            <div className="main-content">
-                                <ButtonScroll />
-                                <Introduction />
-                                <CatalogMenu />
-                                <Gallery />
-                                <Contact />
-                                <Footer />
-                            </div>
-                        }
-                    />
-                    <Route path="/books" element={<Books />} />
-                </Routes>
+  return (
+    <Router>
+      <MainContent />
+    </Router>
+  );
+}
+
+function MainContent() {
+  const location = useLocation(); //Obtem a localização da URL atual
+
+  return (
+    <div className="App">
+      {location.pathname !== "/books" && <Header />}
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div className="main-content">
+              <ButtonScroll />
+              <Introduction />
+              <CatalogMenu />
+              <Gallery />
+              <Contact />
+              <Footer />
             </div>
-        </Router>
-    );
+          }
+        />
+        <Route path="/books" element={<Books />} />
+      </Routes>
+    </div>
+  );
 }
 
 export default App;
