@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.60ba046e.css",
-    "main.js": "/static/js/main.09fad453.js",
+    "main.css": "/static/css/main.bba1a260.css",
+    "main.js": "/static/js/main.fa7792a6.js",
     "static/js/488.1c383460.chunk.js": "/static/js/488.1c383460.chunk.js",
-    "static/media/photo-intro.png": "/static/media/photo-intro.6bb3a966853bdd091fcb.png",
+    "static/media/photo-intro.webp": "/static/media/photo-intro.4e8c7ff7567010435c30.webp",
     "static/media/photo-gallery-h5.png": "/static/media/photo-gallery-h5.8982168cb35333a8dd0a.png",
     "static/media/photo-gallery-h2.png": "/static/media/photo-gallery-h2.b9b90add46739c9004f8.png",
     "static/media/catalog-intro.png": "/static/media/catalog-intro.37df728d97ee6081309e.png",
@@ -28,17 +28,18 @@
     "static/media/footer-awards-2022.png": "/static/media/footer-awards-2022.01fe45fa2df80c697715.png",
     "static/media/footer-awards-2024.png": "/static/media/footer-awards-2024.dcde3064a92653b6d252.png",
     "static/media/footer-awards-2021.png": "/static/media/footer-awards-2021.c135e74deec59ae1022a.png",
+    "static/media/logo-brown.png": "/static/media/logo-brown.ba07bde7988b083e542d.png",
     "static/media/logo.png": "/static/media/logo.ac9905c176906657a3a7.png",
     "static/media/whatsapp.svg": "/static/media/whatsapp.60b26700f9f53f3d8932122fa6470c11.svg",
     "static/media/instagram.svg": "/static/media/instagram.ece17d286f23a5138238291099879949.svg",
     "index.html": "/index.html",
     "static/media/facebook.svg": "/static/media/facebook.e2cd2868fd0b34db7879e03469b61345.svg",
-    "main.60ba046e.css.map": "/static/css/main.60ba046e.css.map",
-    "main.09fad453.js.map": "/static/js/main.09fad453.js.map",
+    "main.bba1a260.css.map": "/static/css/main.bba1a260.css.map",
+    "main.fa7792a6.js.map": "/static/js/main.fa7792a6.js.map",
     "488.1c383460.chunk.js.map": "/static/js/488.1c383460.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.60ba046e.css",
-    "static/js/main.09fad453.js"
+    "static/css/main.bba1a260.css",
+    "static/js/main.fa7792a6.js"
   ]
 }
