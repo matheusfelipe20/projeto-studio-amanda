@@ -25,11 +25,8 @@
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    color: white;
-    z-index: 2; 
+    z-index: 2;
     text-align: center; 
-    font-size: 2rem; 
-    font-weight: bold; 
 }
 
 .intro-text h1 {
@@ -57,4 +54,22 @@
     text-align: center;
     font-size: 1.2rem;
     font-weight: 100;
+}
+
+/* Responsivo para mobile */
+@media (max-width: 768px) {
+    
+    .intro-text h1 {
+        font-size: 2rem;
+        width: 400px;
+    }
+    
+    .intro-text p {
+        font-size: 1rem;
+        margin-top: -10px;
+    }
+    
+    .intro-text-bottom p {
+        font-size: 0.8rem;
+    }
 }

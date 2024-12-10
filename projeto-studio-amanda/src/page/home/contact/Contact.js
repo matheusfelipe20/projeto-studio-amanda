@@ -24,7 +24,7 @@ const Contact = () => (
                         <SocialButton height={"28px"} width={"28px"} icon={whatsappIcon} alt="Perfil Whatsapp" href="https://api.whatsapp.com/send?phone=558388217042" />
                         <SocialButton height={"28px"} width={"28px"} icon={facebookIcon} alt="Perfil Facebook" href="https://www.facebook.com/www.amandapaiva.com.br?mibextid=ZbWKwL" />
                     </div>
-                    <ButtonContato width="280px" height="45px" text="Solicitar Orçamento" whatsappNumber="558388217042" alt="Botão para entrar em contato via WhatsApp"/>
+                    <ButtonContato height="55px" text="Solicitar Orçamento" whatsappNumber="558388217042" alt="Botão para entrar em contato via WhatsApp"/>
                 </div>
             </div>
         </div>
