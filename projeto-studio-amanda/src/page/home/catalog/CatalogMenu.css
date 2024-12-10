@@ -114,6 +114,14 @@
     width: 200px;
 }
 
+.menu-title a {
+    text-decoration: none;
+}
+
+.menu-title a:hover {
+    text-decoration: none;
+}
+
 .menu-title p {
     color: var(--color-primary);
     font-size: 1.2rem;
