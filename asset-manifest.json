@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/projeto-studio-amanda/static/css/main.aa1bea2e.css",
+    "main.js": "/projeto-studio-amanda/static/js/main.8bf9d189.js",
+    "static/js/488.1c383460.chunk.js": "/projeto-studio-amanda/static/js/488.1c383460.chunk.js",
+    "static/media/photo-intro.png": "/projeto-studio-amanda/static/media/photo-intro.6bb3a966853bdd091fcb.png",
+    "static/media/photo-gallery-h5.png": "/projeto-studio-amanda/static/media/photo-gallery-h5.8982168cb35333a8dd0a.png",
+    "static/media/photo-gallery-h2.png": "/projeto-studio-amanda/static/media/photo-gallery-h2.b9b90add46739c9004f8.png",
+    "static/media/catalog-intro.png": "/projeto-studio-amanda/static/media/catalog-intro.37df728d97ee6081309e.png",
+    "static/media/photo-gallery-h8.png": "/projeto-studio-amanda/static/media/photo-gallery-h8.e14742a07ade5a784303.png",
+    "static/media/catalog-p3.png": "/projeto-studio-amanda/static/media/catalog-p3.8cdd96633e7684b83014.png",
+    "static/media/photo-gallery-h7.png": "/projeto-studio-amanda/static/media/photo-gallery-h7.4dc231d2af37b76a3453.png",
+    "static/media/photo-gallery-h3.png": "/projeto-studio-amanda/static/media/photo-gallery-h3.88dfe9a8e7c913d646f8.png",
+    "static/media/catalog-p2.png": "/projeto-studio-amanda/static/media/catalog-p2.96c4a4efee47e476d41e.png",
+    "static/media/photo-gallery-h6.png": "/projeto-studio-amanda/static/media/photo-gallery-h6.dcfce8049500f55269b2.png",
+    "static/media/catalog-p1.png": "/projeto-studio-amanda/static/media/catalog-p1.a6c27a80f276f44de342.png",
+    "static/media/photo-gallery-v1.png": "/projeto-studio-amanda/static/media/photo-gallery-v1.68970ab13f8e22dfefa5.png",
+    "static/media/photo-gallery-h4.png": "/projeto-studio-amanda/static/media/photo-gallery-h4.bae8adeeae7f1a8baf43.png",
+    "static/media/catalog-p4.png": "/projeto-studio-amanda/static/media/catalog-p4.21b856eccd5c955c70e3.png",
+    "static/media/photo-contact.png": "/projeto-studio-amanda/static/media/photo-contact.73c80fcb3e0dda10fcc5.png",
+    "static/media/photo-gallery-h1.png": "/projeto-studio-amanda/static/media/photo-gallery-h1.6cf20d76c59b77cdeebf.png",
+    "static/media/photo-gallery-v2.png": "/projeto-studio-amanda/static/media/photo-gallery-v2.bfd81ca16a2adbdbf997.png",
+    "static/media/catalog-menu-3.png": "/projeto-studio-amanda/static/media/catalog-menu-3.f13003acc2c308f4d862.png",
+    "static/media/catalog-menu-1.png": "/projeto-studio-amanda/static/media/catalog-menu-1.ab965b7f231bf1535ab5.png",
+    "static/media/catalog-menu-2.png": "/projeto-studio-amanda/static/media/catalog-menu-2.58b47bb5b83ce973ef59.png",
+    "static/media/photo-gallery.png": "/projeto-studio-amanda/static/media/photo-gallery.72091850bd83e79216b4.png",
+    "static/media/footer-awards-2023.png": "/projeto-studio-amanda/static/media/footer-awards-2023.6d2c2ca79d5ae74d79a5.png",
+    "static/media/footer-awards-2022.png": "/projeto-studio-amanda/static/media/footer-awards-2022.01fe45fa2df80c697715.png",
+    "static/media/footer-awards-2024.png": "/projeto-studio-amanda/static/media/footer-awards-2024.dcde3064a92653b6d252.png",
+    "static/media/logo.png": "/projeto-studio-amanda/static/media/logo.ac9905c176906657a3a7.png",
+    "static/media/whatsapp.svg": "/projeto-studio-amanda/static/media/whatsapp.60b26700f9f53f3d8932122fa6470c11.svg",
+    "static/media/instagram.svg": "/projeto-studio-amanda/static/media/instagram.ece17d286f23a5138238291099879949.svg",
+    "index.html": "/projeto-studio-amanda/index.html",
+    "static/media/facebook.svg": "/projeto-studio-amanda/static/media/facebook.e2cd2868fd0b34db7879e03469b61345.svg",
+    "main.aa1bea2e.css.map": "/projeto-studio-amanda/static/css/main.aa1bea2e.css.map",
+    "main.8bf9d189.js.map": "/projeto-studio-amanda/static/js/main.8bf9d189.js.map",
+    "488.1c383460.chunk.js.map": "/projeto-studio-amanda/static/js/488.1c383460.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa1bea2e.css",
+    "static/js/main.8bf9d189.js"
+  ]
+}
