@@ -136,6 +136,7 @@
     }
 
     .catalog-title h1 {
+        width: 300px;
         font-size: 2rem;
     }
 
