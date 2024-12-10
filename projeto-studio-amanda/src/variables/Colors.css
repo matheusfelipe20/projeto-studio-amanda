@@ -12,4 +12,9 @@
 
     --color-primary-hover: #1C090B;
     --color-secundary-hover: #FFA590;
+
+    /* Cores botões */
+    --background-button-simple: #56413E;
+
+    --color-button-simple: #56413E;
 }
