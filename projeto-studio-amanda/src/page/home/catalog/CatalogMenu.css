@@ -1,0 +1,124 @@
+/* Estilos do Catalogos */
+
+.catalog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catalog-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.catalog-title h1 {
+    color: var(--color-primary);
+    font-size: 2.4rem;
+    letter-spacing: 0.2rem;
+}
+
+.catalog-title p {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-top: -20px;
+}
+
+
+.catalog-photos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.catalog-photos img {
+    width: 490px;
+    height: 470px;
+    object-fit: cover;
+}
+
+.catalog-photos > img {
+    flex: 1 1 60%;
+    margin-right: 20px;
+}
+
+.catalog-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 50%;
+    gap: 10px;
+    height: 100%;
+}
+
+.catalog-group > div {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+}
+
+.catalog-group img {
+    width: 240px; 
+    height: 230px;
+    object-fit: cover;
+}
+
+/* Estilos dos Menus */
+
+.catalog-menu {
+    background: linear-gradient(to bottom, #FFA590 60%, var(--background-primary) 60%);
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+}
+
+.catalog-menu p {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.menu-options {
+    position: relative;
+    width: 30%;
+}
+
+.menu-options img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.menu-title {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-secundary);
+    padding: 10px 20px;
+    width: 200px;
+}
+
+.menu-title p {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}

@@ -1,0 +1,15 @@
+/* Espaço para variaveis de cores */
+
+:root {
+    --background-primary: #E5CBB4;
+    --background-secondary: #FFA590;
+    --background-footer: #363636;
+
+
+    /* Cores fontes */
+    --color-primary: #56413E;
+    --color-secundary: #FFF1D7;
+
+    --color-primary-hover: #1C090B;
+    --color-secundary-hover: #FFA590;
+}
