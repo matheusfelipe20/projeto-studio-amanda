@@ -14,14 +14,14 @@ import Books from './page/books/Books';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <MainContent />
     </Router>
   );
 }
 
 function MainContent() {
-  const location = useLocation(); //Obtem a localização da URL atual
+  const location = useLocation(); // Obtem a localização da URL atual
 
   return (
     <div className="App">
