@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Gallery.css';
 import galleryPhoto from '../../../assets/img/gallery/photo-gallery.png';
 
@@ -38,6 +39,13 @@ const Gallery = () => (
                     <img className="gallery-photo-horizontal" src={galleryPhotoHorizontal8} alt="foto criança sorrindo segurando um ursinho" />
                 </div>
                 <img className="gallery-photo-vertical" src={galleryPhotoVertical2} alt="foto adolescente fazendo pose" />
+            </div>
+            <div className="gallery-button">
+                <Link to="/books">
+                    <p>
+                        Ver mais
+                    </p>
+                </Link>
             </div>
             <div className="gallery-footer">
                 <img src={galleryPhoto} alt="rodapé da galeria"/>

@@ -1,5 +1,5 @@
 .section-books {
-    padding: 100px 60px 0px 60px;
+    padding: 100px 0px 0px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,4 +46,39 @@
     grid-template-columns: repeat(2, 270px);
     gap: 10px;
     justify-content: center;
+}
+
+/* Responsivo para mobile */
+@media (max-width: 768px) {
+
+    .section-books {
+        padding: 80px 0px 0px 0px;
+    }
+    
+    .books-title h1{
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+    
+    .books-title p {
+        font-size: 0.8rem;
+        margin-top: -20px;
+    }
+
+    .book-photo-horizontal {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    .book-panel {
+        margin-bottom: 0px;
+    }
+    
+    .book-panel > div {
+        display: grid;
+        grid-template-columns: repeat(2, 160px);
+        gap: 10px;
+        justify-content: center;
+    }
 }

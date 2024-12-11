@@ -9,8 +9,6 @@ import photoMenu1 from '../../../assets/img/catalog/catalog-menu-1.png';
 import photoMenu2 from '../../../assets/img/catalog/catalog-menu-2.png';
 import photoMenu3 from '../../../assets/img/catalog/catalog-menu-3.png';
 
-import { Link } from 'react-router-dom';
-
 const CatalogMenu = () => (
     <div className="catalog-container">
         <div className="catalog-title">
@@ -36,9 +34,7 @@ const CatalogMenu = () => (
                 <div className="menu-options">
                     <img src={photoMenu1} alt="Imagem de apresentação de menu" />
                     <div className="menu-title">
-                        <Link to="/books">
-                            <p>Books</p>
-                        </Link>
+                        <p>Books</p>
                     </div>
                 </div>
                 <div className="menu-options">
