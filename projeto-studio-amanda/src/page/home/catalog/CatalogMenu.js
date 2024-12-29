@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './CatalogMenu.css';
 import photoCatalogIntro from '../../../assets/img/catalog/catalog-intro.png';
 import photoCatalog1 from '../../../assets/img/catalog/catalog-p1.png';
@@ -16,7 +17,18 @@ const CatalogMenu = () => (
             <p>Comemorando cada data</p>
         </div>
         <div className="catalog-photos">
-            <img src={photoCatalogIntro} alt="Imagem principal do catalogo" />
+            <div className='catalog-special'>
+                <h1>Campanha de Verão</h1>
+                <p className='catalog-special-text'>Já Disponível</p>
+                <img src={photoCatalogIntro} alt="Imagem principal do catalogo" />
+                <div className='catalog-special-img'>
+                    <Link to="/campanha-ferias-de-verao">
+                        <p className='catalog-special-link'>
+                            Visualizar
+                        </p>
+                    </Link>
+                </div>
+            </div>
             <div className="catalog-group">
                 <div>
                     <img src={photoCatalog1} alt="Imagem secundaria do catalogo" />

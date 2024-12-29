@@ -60,12 +60,12 @@
 @media (max-width: 768px) {
     
     .intro-text h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         width: 360px;
     }
     
     .intro-text p {
-        font-size: 1rem;
+        font-size: 0.9rem;
         margin-top: -10px;
     }
     

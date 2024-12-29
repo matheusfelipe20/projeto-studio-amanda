@@ -11,6 +11,7 @@ import ButtonScroll from './components/buttons/buttonScroll/ButtonScroll';
 import Footer from './page/home/footer/Footer';
 
 import Books from './page/books/Books';
+import CampaignSpecial from './page/campaign-special/CampaignSpecial';
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function MainContent() {
 
   return (
     <div className="App">
-      {location.pathname !== "/books" && <Header />}
+      {location.pathname === "/" && <Header />}
       <Routes>
         <Route
           path="/"
@@ -41,6 +42,7 @@ function MainContent() {
           }
         />
         <Route path="/books" element={<Books />} />
+        <Route path="/campanha-ferias-de-verao" element={<CampaignSpecial />} />
       </Routes>
     </div>
   );

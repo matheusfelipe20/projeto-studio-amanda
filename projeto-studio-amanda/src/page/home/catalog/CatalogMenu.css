@@ -23,23 +23,77 @@
     margin-top: -20px;
 }
 
-
 .catalog-photos {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1100px;
+    max-width: 1000px;
 }
 
-.catalog-photos img {
+.catalog-special {
+    position: relative;
+    display: inline-block;
+    width: 490px;
+    height: 470px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.catalog-special img {
     width: 490px;
     height: 470px;
     object-fit: cover;
 }
 
-.catalog-photos > img {
+.catalog-special > img {
     flex: 1 1 60%;
-    margin-right: 20px;
+}
+
+.catalog-special h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-primary);
+    background-color: var(--color-secundary);
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.catalog-special-text {
+    position: absolute;
+    top: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.catalog-special-img {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+}
+
+.catalog-special-link {
+    color: var(--color-secundary);
+    font-weight: bold;
+    text-decoration: none;
+    background-color: var(--color-primary);
+    padding: 12px 60px;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.catalog-special-link:hover {
+    background-color: var(--background-button-simple-hover);
+    transform: translateY(-3px);
 }
 
 .catalog-group {
@@ -62,6 +116,7 @@
     height: 230px;
     object-fit: cover;
 }
+
 
 /* Estilos dos Menus */
 .catalog-menu {
@@ -138,6 +193,7 @@
     .catalog-title h1 {
         width: 300px;
         font-size: 2rem;
+        line-height: 1.4;
     }
 
     .catalog-title p {
@@ -154,17 +210,6 @@
         gap: 10px;
     }
 
-    .catalog-photos img {
-        width: 330px;
-        height: 330px;
-        object-fit: cover;
-    }
-
-    .catalog-photos > img {
-        flex: 1 1 60%;
-        margin: 0;
-    }
-
     .catalog-group {
         display: flex;
         flex-direction: column;
@@ -178,6 +223,64 @@
         width: 160px; 
         height: 150px;
         object-fit: cover;
+    }
+
+    /* Campanha Especial */
+
+    .catalog-special {
+        display: flex;
+        width: 330px;
+        height: 100%;
+        overflow: hidden;
+        margin-right: 0px;
+    }
+    
+    .catalog-special img {
+        width: 330px;
+        height: 330px;
+        object-fit: cover;
+    }
+    
+    .catalog-special > img {
+        flex: 1 1 60%;
+        margin: 0;
+    }
+    
+    .catalog-special h1 {
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 5px 10px;
+    }
+    
+    .catalog-special-text {
+        position: absolute;
+        top: 37px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.6rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    
+    .catalog-special-img {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        color: white;
+    }
+    
+    .catalog-special-link {
+        color: var(--color-secundary);
+        font-weight: bold;
+        text-decoration: none;
+        background-color: var(--color-primary);
+        padding: 10px 50px;
+        display: inline-block;
+        transition: background-color 0.3s, transform 0.3s;
     }
 
     /* Estilos dos Menus */
