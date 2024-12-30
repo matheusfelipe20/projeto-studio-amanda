@@ -36,7 +36,7 @@ const CampaignSpecial = () => {
             <ButtonScroll />
             <div className="section-campaigns">
                 <div className="campaigns-title">
-                    <h1>Campanha Temática</h1>
+                    <h1>Campanha</h1>
                     <p>Férias de Verão</p>
                 </div>
                 <Divider width={"30%"} color={"var(--color-primary)"} thickness={"2px"}/>
