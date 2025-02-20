@@ -7,11 +7,6 @@ import Divider from '../../components/divider/Divider';
 import Footer from '../home/footer/Footer';
 import ButtonScroll from '../../components/buttons/buttonScroll/ButtonScroll';
 
-const CLOUD_NAME = process.env.REACT_APP_CLOUDINARY_API_NAME;
-const API_KEY = process.env.REACT_APP_CLOUDINARY_API_KEY;
-const API_SECRET = process.env.REACT_APP_CLOUDINARY_API_SECRET;
-const TAG_NAME = 'books-all';
-
 const Books = () => {
   const [images, setImages] = useState([]);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -21,20 +16,10 @@ const Books = () => {
     window.scrollTo(0, 0);
     const fetchImages = async () => {
       try {
-        const response = await axios.get(
-          `https://res.cloudinary.com/${CLOUD_NAME}/image/list/${TAG_NAME}.json`,
-          {
-            headers: {
-              Authorization: `Basic ${btoa(`${API_KEY}:${API_SECRET}`)}`
-            }
-          }
-        );
-        const imageUrls = response.data.resources.map(img =>
-          `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/${img.public_id}.${img.format}`
-        );
-        setImages(imageUrls);
+        const response = await axios.get('https://api-studio-amanda.onrender.com/api/images/books-all');
+        setImages(response.data.images);
       } catch (error) {
-        console.error('Erro ao buscar imagens do Cloudinary:', error);
+        console.error('Erro ao buscar imagens do backend:', error);
       }
     };
 
