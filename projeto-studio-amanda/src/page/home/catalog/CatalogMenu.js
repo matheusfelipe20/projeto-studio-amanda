@@ -1,7 +1,7 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import './CatalogMenu.css';
-import photoCatalogIntro from '../../../assets/img/catalog/catalog-intro.png';
+import photoCatalogIntro from '../../../assets/img/catalog/catalog-special.jpeg';
 import photoCatalog1 from '../../../assets/img/catalog/catalog-p1.png';
 import photoCatalog2 from '../../../assets/img/catalog/catalog-p2.png';
 import photoCatalog3 from '../../../assets/img/catalog/catalog-p3.png';
