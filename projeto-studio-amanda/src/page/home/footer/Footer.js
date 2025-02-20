@@ -1,10 +1,10 @@
 import React from 'react';
 import './Footer.css';
 import logoFooter from '../../../assets/img/logo.png';
-import awardsFooter1 from '../../../assets/img/footer-awards-2021.png';
-import awardsFooter2 from '../../../assets/img/footer-awards-2022.png';
-import awardsFooter3 from '../../../assets/img/footer-awards-2023.png';
-import awardsFooter4 from '../../../assets/img/footer-awards-2024.png';
+import awardsFooter1 from '../../../assets/img/footer-awards-2021.webp';
+import awardsFooter2 from '../../../assets/img/footer-awards-2022.webp';
+import awardsFooter3 from '../../../assets/img/footer-awards-2023.webp';
+import awardsFooter4 from '../../../assets/img/footer-awards-2024.webp';
 
 const Footer = () => (
     <div className="footer-container">

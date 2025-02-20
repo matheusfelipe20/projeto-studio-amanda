@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact.css';
-import contactPhoto from '../../../assets/img/photo-contact.png';
+import contactPhoto from '../../../assets/img/photo-contact.webp';
 import instagramIcon from '../../../assets/icon/instagram.svg';
 import whatsappIcon from '../../../assets/icon/whatsapp.svg';
 import facebookIcon from '../../../assets/icon/facebook.svg';
