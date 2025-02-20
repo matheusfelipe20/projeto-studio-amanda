@@ -106,7 +106,7 @@ const Books = () => {
               </div>
             ))
           ) : (
-            <p>Carregando imagens...</p>
+            <p className="text-loading-image">Carregando imagens...</p>
           )}
         </div>
       </div>
