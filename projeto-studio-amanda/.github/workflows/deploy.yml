@@ -13,16 +13,14 @@ jobs:
       - name: Checkout do código
         uses: actions/checkout@v3
 
-      - name: Configurar variáveis de ambiente
-        run: |
-          echo "REACT_APP_CLOUDINARY_API_NAME=${{ secrets.REACT_APP_CLOUDINARY_API_NAME }}" >> $GITHUB_ENV
-          echo "REACT_APP_CLOUDINARY_API_KEY=${{ secrets.REACT_APP_CLOUDINARY_API_KEY }}" >> $GITHUB_ENV
-          echo "REACT_APP_CLOUDINARY_API_SECRET=${{ secrets.REACT_APP_CLOUDINARY_API_SECRET }}" >> $GITHUB_ENV
-
       - name: Instalar dependências
         run: npm install
 
       - name: Construir projeto
+        env:
+          REACT_APP_CLOUDINARY_API_NAME: ${{ secrets.REACT_APP_CLOUDINARY_API_NAME }}
+          REACT_APP_CLOUDINARY_API_KEY: ${{ secrets.REACT_APP_CLOUDINARY_API_KEY }}
+          REACT_APP_CLOUDINARY_API_SECRET: ${{ secrets.REACT_APP_CLOUDINARY_API_SECRET }}
         run: npm run build
 
       - name: Deploy para GitHub Pages
