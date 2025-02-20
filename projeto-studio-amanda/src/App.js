@@ -26,7 +26,7 @@ function App() {
 }
 
 function MainContent() {
-  const location = useLocation(); // Obtem a localização da URL atual
+  const location = useLocation();
 
   return (
     <div className="App">

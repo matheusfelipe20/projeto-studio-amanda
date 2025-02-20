@@ -9,6 +9,8 @@
     height: 60px;
     margin-left: 60px;
     margin-top: 20px;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .footer-awards {
