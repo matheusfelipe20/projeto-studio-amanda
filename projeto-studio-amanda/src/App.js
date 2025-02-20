@@ -1,3 +1,4 @@
+import { useState } from "react";
 import './App.css';
 import './variables/Colors.css';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
@@ -9,14 +10,17 @@ import Gallery from './page/home/gallery/Gallery';
 import Contact from './page/home/contact/Contact';
 import ButtonScroll from './components/buttons/buttonScroll/ButtonScroll';
 import Footer from './page/home/footer/Footer';
+import LoadingHome from './components/loading/LoadingHome';
 
 import Books from './page/books/Books';
 import CampaignSpecial from './page/campaign-special/CampaignSpecial';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
   return (
     <Router basename="/">
-      <MainContent />
+      {loading ? <LoadingHome onFinish={() => setLoading(false)} /> : <MainContent />}
     </Router>
   );
 }
