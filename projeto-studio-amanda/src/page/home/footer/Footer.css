@@ -1,63 +1,126 @@
 .footer-container {
     background-color: var(--background-footer);
     width: 100%;
-    height: 220px;
+    height: auto;
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
-.footer-container img {
-    height: 60px;
+.footer-panel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     margin-left: 60px;
-    margin-top: 20px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 60px;
+}
+
+.select-languageFooter {
+    padding-top: 20px;
+}
+
+.footer-group {
+    padding-top: 20px;
+}
+
+.footer-title {
+    color: var(--color-secundary);
+    font-weight: 500;
+    margin: 0;
+}
+
+.footer-awards {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.footer-awards > img{
+    height: 50px;
+    margin: 0;
+    -webkit-user-drag: none;
+}
+
+.footer-redeSocial {
+    display: flex;
+    gap: 12px;
+    margin: 8px 4px;
+}
+
+.footer-redeSocial button {
+    cursor: pointer;
+}
+
+.select-language > p{
+    color: var(--color-secundary);
+    margin-right: 60px;
+}
+
+.footer-divider {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-final {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.footer-logo {
+    height: 50px;
+    margin: 0px 0px 5px 60px;
     user-select: none;
     -webkit-user-drag: none;
 }
 
-.footer-awards {
-    margin-left: 50px;
-}
-
-.footer-awards img{
-    margin-left: 0;
-}
-
 .footer-copy {
-    text-align: center;
     color: var(--color-secundary);
     font-weight: 100;
+    font-size: 0.7rem;
+    margin: -8px 0px 0px -3px;
 }
 
 /* Responsivo para mobile */
 @media (max-width: 768px) {
-
-    .footer-container {
-        background-color: var(--background-footer);
-        width: 100%;
-        height: 210px;
-        margin-top: 30px;
-    }
-    
-    .footer-container img {
-        height: 40px;
+    .footer-left {
         margin-left: 30px;
-        margin-top: 30px;
     }
     
-    .footer-awards {
-        margin-left: 25px;
-        margin-top: -10px;
+    .footer-right {
+        margin-right: 30px;
     }
     
-    .footer-awards img{
-        margin-left: 0;
+    .footer-title {
+        font-size: 1rem;
+    }
+    
+    .footer-awards > img{
+        height: 40px;
+    }
+    
+    .select-language > p{
+        margin-right: 30px;
+    }
+    
+    .footer-logo {
+        height: 30px;
+        margin: 0px 0px 5px 30px;
     }
     
     .footer-copy {
-        text-align: center;
-        color: var(--color-secundary);
-        font-weight: 100;
-        font-size: 0.8rem;
-        margin-top: 30px;
+        font-size: 0.6rem;
     }
-
 }

@@ -2,6 +2,7 @@ import { useState } from "react";
 import './App.css';
 import './variables/Colors.css';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { LanguageProvider } from "./contexts/LanguageContext";
 
 import Header from './page/home/header/Header';
 import Introduction from './page/home/introduction/Introduction';
@@ -19,9 +20,15 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   return (
-    <Router basename="/">
-      {loading ? <LoadingHome onFinish={() => setLoading(false)} /> : <MainContent />}
-    </Router>
+    <LanguageProvider>
+      <Router basename="/">
+        {loading ? (
+          <LoadingHome onFinish={() => setLoading(false)} />
+        ) : (
+          <MainContent />
+        )}
+      </Router>
+    </LanguageProvider>
   );
 }
 

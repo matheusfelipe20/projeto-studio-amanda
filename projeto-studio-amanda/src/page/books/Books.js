@@ -7,6 +7,9 @@ import Divider from '../../components/divider/Divider';
 import Footer from '../home/footer/Footer';
 import ButtonScroll from '../../components/buttons/buttonScroll/ButtonScroll';
 
+const CLOUD_NAME = 'dtcmkkphs';
+const TAG = 'books-all';
+
 const Books = () => {
   const [images, setImages] = useState([]);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -16,10 +19,13 @@ const Books = () => {
     window.scrollTo(0, 0);
     const fetchImages = async () => {
       try {
-        const response = await axios.get('https://api-studio-amanda.onrender.com/api/images/books-all');
-        setImages(response.data.images);
+        const response = await axios.get(
+          `https://res.cloudinary.com/${CLOUD_NAME}/image/list/${TAG}.json`
+        );
+        const imageUrls = response.data.resources.map(img => `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/${img.public_id}.${img.format}`);
+        setImages(imageUrls);
       } catch (error) {
-        console.error('Erro ao buscar imagens do backend:', error);
+        console.error('Erro ao buscar imagens do Cloudinary:', error);
       }
     };
 
