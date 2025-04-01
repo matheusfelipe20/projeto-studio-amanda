@@ -7,13 +7,17 @@ import Divider from '../../components/divider/Divider';
 import Footer from '../home/footer/Footer';
 import ButtonScroll from '../../components/buttons/buttonScroll/ButtonScroll';
 
-const CLOUD_NAME = 'dtcmkkphs';
-const TAG = 'books-all';
-
 const Books = () => {
+  const CLOUD_NAME = 'dtcmkkphs';
+  const TAG = 'books-all';
   const [images, setImages] = useState([]);
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Função para embaralhar a ordem das imagens
+  function shuffleArray(array) {
+    return array.sort(() => Math.random() - 0.5);
+  }
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -22,8 +26,12 @@ const Books = () => {
         const response = await axios.get(
           `https://res.cloudinary.com/${CLOUD_NAME}/image/list/${TAG}.json`
         );
-        const imageUrls = response.data.resources.map(img => `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/${img.public_id}.${img.format}`);
-        setImages(imageUrls);
+        const imageUrls = response.data.resources.map(img => 
+          `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/${img.public_id}.${img.format}`
+        );
+
+        // Aplica a função de embaralhamento antes de definir as imagens
+        setImages(shuffleArray(imageUrls));
       } catch (error) {
         console.error('Erro ao buscar imagens do Cloudinary:', error);
       }

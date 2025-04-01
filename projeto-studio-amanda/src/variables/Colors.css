@@ -6,7 +6,6 @@
     --background-footer: #363636;
     --background-footer-hover: #505050;
 
-
     /* Cores fontes */
     --color-primary: #56413E;
     --color-secundary: #FFF1D7;
@@ -19,4 +18,11 @@
     --background-button-simple-hover: #3b2a28;
 
     --color-button-simple: #56413E;
+
+    /* Cores Campanha Especial Catalogo */
+    --background-button-catalogSpecial: #ffd700;
+    --background-button-catalogSpecial-hover: #ffcc00;
+    --color-button-catalogSpecial: #6d3d14;
+
+
 }

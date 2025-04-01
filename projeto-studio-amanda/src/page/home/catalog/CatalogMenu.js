@@ -1,14 +1,14 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './CatalogMenu.css';
 import photoCatalogIntro from '../../../assets/img/catalog/catalog-intro.webp';
-import photoCatalog1 from '../../../assets/img/catalog/catalog-p1.png';
-import photoCatalog2 from '../../../assets/img/catalog/catalog-p2.png';
-import photoCatalog3 from '../../../assets/img/catalog/catalog-p3.png';
-import photoCatalog4 from '../../../assets/img/catalog/catalog-p4.png';
-import photoMenu1 from '../../../assets/img/catalog/catalog-menu-1.png';
-import photoMenu2 from '../../../assets/img/catalog/catalog-menu-2.png';
-import photoMenu3 from '../../../assets/img/catalog/catalog-menu-3.png';
+import photoCatalog1 from '../../../assets/img/catalog/catalog-p1.webp';
+import photoCatalog2 from '../../../assets/img/catalog/catalog-p2.webp';
+import photoCatalog3 from '../../../assets/img/catalog/catalog-p3.webp';
+import photoCatalog4 from '../../../assets/img/catalog/catalog-p4.webp';
+import photoMenu1 from '../../../assets/img/catalog/catalog-menu-1.webp';
+import photoMenu2 from '../../../assets/img/catalog/catalog-menu-2.webp';
+import photoMenu3 from '../../../assets/img/catalog/catalog-menu-3.webp';
 
 const CatalogMenu = () => (
     <div className="catalog-container">
@@ -18,16 +18,20 @@ const CatalogMenu = () => (
         </div>
         <div className="catalog-photos">
             <div className='catalog-special'>
-                {/* <h1>Campanha de Verão</h1>
-                <p className='catalog-special-text'>Já Disponível</p> */}
-                <img src={photoCatalogIntro} alt="Imagem principal do catalogo" />
-                {/* <div className='catalog-special-img'>
-                    <Link to="/campanha-ferias-de-verao">
-                        <p className='catalog-special-link'>
-                            Visualizar
+                <img src={photoCatalogIntro} alt="Imagem principal do catálogo" className="catalog-image"/>
+                <div className="catalog-overlay always-visible">
+                    <div className="catalog-topSide">
+                        <h1 className="catalogSpecial-title">📸 Especial de Páscoa 🐰</h1>
+                    </div>
+                    <div className="catalog-botSide">
+                        <p className="catalog-description">
+                            Explore nossa coleção exclusiva de fotos temáticas de Páscoa!
                         </p>
-                    </Link>
-                </div> */}
+                        <Link to="/books/pascoa">
+                            <button className="catalog-button">Visualizar Galeria</button>
+                        </Link>
+                    </div>
+                </div>
             </div>
             <div className="catalog-group">
                 <div>

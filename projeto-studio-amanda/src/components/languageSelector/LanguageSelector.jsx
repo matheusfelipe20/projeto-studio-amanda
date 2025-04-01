@@ -3,12 +3,12 @@ import "./LanguageSelector.css";
 import { FaChevronDown } from "react-icons/fa";
 
 import brazilFlag from "../../assets/flag/br.svg";
-import unitedStatesFlag from "../../assets/flag/us.svg";
+// import unitedStatesFlag from "../../assets/flag/us.svg";
 import { useLanguage } from "../../contexts/LanguageContext";
 
 const languages = [
   { code: "pt-BR", name: "Português", flag: brazilFlag },
-  { code: "en-US", name: "English", flag: unitedStatesFlag }
+  // { code: "en-US", name: "English", flag: unitedStatesFlag }
 ];
 
 const LanguageSelector = () => {

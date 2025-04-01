@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom';
 import './Gallery.css';
 import galleryPhoto from '../../../assets/img/gallery/photo-gallery.png';
 
-import galleryPhotoVertical1 from '../../../assets/img/gallery/photo-gallery-v1.png';
+import galleryPhotoVertical1 from '../../../assets/img/gallery/photo-gallery-v1.webp';
 import galleryPhotoHorizontal1 from '../../../assets/img/gallery/photo-gallery-h1.png';
 import galleryPhotoHorizontal2 from '../../../assets/img/gallery/photo-gallery-h2.png';
 import galleryPhotoHorizontal3 from '../../../assets/img/gallery/photo-gallery-h3.png';
 import galleryPhotoHorizontal4 from '../../../assets/img/gallery/photo-gallery-h4.png';
 
-import galleryPhotoVertical2 from '../../../assets/img/gallery/photo-gallery-v2.png';
-import galleryPhotoHorizontal5 from '../../../assets/img/gallery/photo-gallery-h5.png';
-import galleryPhotoHorizontal6 from '../../../assets/img/gallery/photo-gallery-h6.png';
-import galleryPhotoHorizontal7 from '../../../assets/img/gallery/photo-gallery-h7.png';
-import galleryPhotoHorizontal8 from '../../../assets/img/gallery/photo-gallery-h8.png';
+import galleryPhotoVertical2 from '../../../assets/img/gallery/photo-gallery-v2.webp';
+import galleryPhotoHorizontal5 from '../../../assets/img/gallery/photo-gallery-h5.webp';
+import galleryPhotoHorizontal6 from '../../../assets/img/gallery/photo-gallery-h6.webp';
+import galleryPhotoHorizontal7 from '../../../assets/img/gallery/photo-gallery-h7.webp';
+import galleryPhotoHorizontal8 from '../../../assets/img/gallery/photo-gallery-h8.webp';
 
 const Gallery = () => (
     <section id="gallery">
