@@ -21,13 +21,13 @@ const CatalogMenu = () => (
                 <img src={photoCatalogIntro} alt="Imagem principal do catálogo" className="catalog-image"/>
                 <div className="catalog-overlay always-visible">
                     <div className="catalog-topSide">
-                        <h1 className="catalogSpecial-title">📸 Especial de Páscoa 🐰</h1>
+                        <h1 className="catalogSpecial-title">📸 Especial das Mães 💕</h1>
                     </div>
                     <div className="catalog-botSide">
                         <p className="catalog-description">
-                            Explore nossa coleção exclusiva de fotos temáticas de Páscoa!
+                            Conheça nosso novo cenário exclusivo para o Dia das Mães!
                         </p>
-                        <Link to="/books/pascoa">
+                        <Link to="/books/dia+das+maes">
                             <button className="catalog-button">Visualizar Galeria</button>
                         </Link>
                     </div>

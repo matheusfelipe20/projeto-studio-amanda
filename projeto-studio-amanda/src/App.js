@@ -55,7 +55,7 @@ function MainContent() {
         />
         <Route path="/books" element={<Books />} />
         <Route path="/books/:books" element={<BooksSection />} />
-        <Route path="/books/pascoa" element={<CampaignSpecial />} />
+        <Route path="/books/dia+das+maes" element={<CampaignSpecial />} />
       </Routes>
     </div>
   );

@@ -9,7 +9,7 @@ import ButtonScroll from '../../components/buttons/buttonScroll/ButtonScroll';
 
 const CampaignSpecial = () => {
   const CLOUD_NAME = 'dtcmkkphs';
-  const TAG = 'books-pascoa';
+  const TAG = 'books-maes';
   const [images, setImages] = useState([]);
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -80,7 +80,7 @@ const CampaignSpecial = () => {
       <ButtonScroll />
       <div className="section-booksSpecial">
         <div className="booksSpecial-title">
-          <h1>CAMPANHA PASCOA</h1>
+          <h1>CAMPANHA DAS MÃES</h1>
           <p>2025</p>
         </div>
         <Divider width={"30%"} color={"var(--color-primary)"} thickness={"2px"} />
