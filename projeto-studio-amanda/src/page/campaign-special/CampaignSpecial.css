@@ -6,22 +6,53 @@
     flex-direction: column;
 }
 
+.booksSpecial-hero {
+    position: relative;
+    height: 290px;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+    background-image: url('../../assets/img/campaignSpecial/intro-campaignSpecial.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center 33%;
+}
+  
+.booksSpecial-overlay {
+    background-color: rgba(0, 0, 0, 0.651);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
 .booksSpecial-title {
-    text-align: center;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
 }
-
-.booksSpecial-title h1{
-    color: var(--color-primary);
-    font-size: 2.4rem;
+  
+.booksSpecial-title h1 {
+    font-size: 2.5rem;
     letter-spacing: 0.2rem;
+    margin: 10px 0px 40px 0px;
 }
 
+.booksSpecial-title h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    margin: 0;
+}
+  
 .booksSpecial-title p {
-    color: var(--color-primary);
     font-size: 1.2rem;
-    font-weight: 100;
-    margin-top: -30px;
-    margin-bottom: 0px;
+    font-weight: 300;
+    margin-top: 5px;
 }
 
 .booksSpecial-panel {
@@ -57,7 +88,12 @@
     object-position: center top;
     user-select: none;
     -webkit-user-drag: none;
+    transition: transform 0.4s ease-in-out;
 }
+
+.booksSpecial-photo-all:hover .booksSpecial-photo-horizontal {
+    transform: scale(1.08);
+  }
 
 .image-popup {
     position: fixed;
@@ -127,17 +163,27 @@
 @media (max-width: 768px) {
 
     .section-booksSpecial {
-        padding: 80px 0px 0px 0px;
+        padding: 60px 0px 0px 0px;
+    }
+
+    .booksSpecial-hero {
+        height: 150px;
+        width: 100%;
     }
     
     .booksSpecial-title h1{
-        font-size: 2rem;
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+        margin: 15px 0px 15px 0px;
+    }
+
+    .booksSpecial-title h2{
+        font-size: 1rem;
         letter-spacing: 0.2rem;
     }
     
     .booksSpecial-title p {
         font-size: 0.8rem;
-        margin-top: -20px;
     }
 
     .text-loading-image {
@@ -172,6 +218,31 @@
 
 @media (min-width: 1343px) {
     .section-booksSpecial {
-        padding: 100px 20px 0px 20px;
+        padding: 90px 20px 0px 20px;
+    }
+}
+
+@media (min-width: 2560px) {
+
+    .booksSpecial-hero {
+        height: 50vh;
+    }
+
+    .booksSpecial-title h1 {
+        font-size: 3.5rem;
+        letter-spacing: 0.2rem;
+        margin: 20px 0px 60px 0px;
+    }
+    
+    .booksSpecial-title h2 {
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+        margin: 0;
+    }
+      
+    .booksSpecial-title p {
+        font-size: 1.2rem;
+        font-weight: 300;
+        margin-top: 5px;
     }
 }

@@ -79,11 +79,16 @@ const CampaignSpecial = () => {
       <HeaderSubDominio />
       <ButtonScroll />
       <div className="section-booksSpecial">
-        <div className="booksSpecial-title">
-          <h1>CAMPANHA DAS MÃES</h1>
-          <p>2025</p>
+        <div className="booksSpecial-hero">
+          <div className="booksSpecial-overlay">
+            <div className="booksSpecial-title">
+              <h1>Campanha Especial</h1>
+              <h2>Dia das Mães</h2>
+              <Divider width={"20%"} color={"#fff"} thickness={"2px"} margin={"0px"}/>
+              <p>2025</p>
+            </div>
+          </div>
         </div>
-        <Divider width={"30%"} color={"var(--color-primary)"} thickness={"2px"} />
         <div className="booksSpecial-panel">
           {images.length > 0 ? (
             images.map((src, index) => (
