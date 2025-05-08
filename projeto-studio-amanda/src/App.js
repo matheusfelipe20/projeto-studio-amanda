@@ -15,7 +15,6 @@ import LoadingHome from './components/loading/LoadingHome';
 
 import Books from './page/books/Books';
 import CampaignSpecial from './page/campaign-special/CampaignSpecial';
-import BooksSection from "./page/books/BooksSection";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -54,7 +53,6 @@ function MainContent() {
           }
         />
         <Route path="/books" element={<Books />} />
-        <Route path="/books/:books" element={<BooksSection />} />
         <Route path="/books/dia+das+maes" element={<CampaignSpecial />} />
       </Routes>
     </div>

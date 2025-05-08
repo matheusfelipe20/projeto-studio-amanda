@@ -9,36 +9,46 @@ import ButtonScroll from '../../components/buttons/buttonScroll/ButtonScroll';
 
 const Books = () => {
   const CLOUD_NAME = 'dtcmkkphs';
-  const TAG = 'books-all';
   const [images, setImages] = useState([]);
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [tag, setTag] = useState('books-main');
 
-  // Função para embaralhar a ordem das imagens
-  function shuffleArray(array) {
-    return array.sort(() => Math.random() - 0.5);
-  }
+  const cenarios = [
+    { nome: 'Destaques', tag: 'books-main', titulo: 'Em Destaque' },
+    { nome: 'Dia das Mães', tag: 'books-maes', titulo: 'Dia das Mães' },
+    { nome: 'Natal', tag: 'books-natal', titulo: 'Natal' },
+    { nome: 'Pascoa', tag: 'books-pascoa', titulo: 'Pascoa' },
+    { nome: 'Verão', tag: 'books-verão', titulo: 'Verão' },
+    { nome: 'Acompanhamentos', tag: 'books-acompanhamento', titulo: 'Acompanhamentos' },
+    // { nome: 'São João', tag: 'books-saojoao', titulo: 'São João' },
+    // { nome: 'Dia dos Pais', tag: 'books-pais', titulo: 'Dia dos Pais' },
+    // { nome: 'Dia das Crianças', tag: 'books-diacriancas', titulo: 'Dia das Crianças' },
+  ];
+
+  const tituloAtual = cenarios.find(c => c.tag === tag)?.titulo || 'Em Destaque';
+
+  const shuffleArray = (array) => array.sort(() => Math.random() - 0.5);
+
+  const fetchImages = useCallback(async () => {
+    try {
+      const response = await axios.get(
+        `https://res.cloudinary.com/${CLOUD_NAME}/image/list/${tag}.json`
+      );
+      const imageUrls = response.data.resources.map(img =>
+        `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/${img.public_id}.${img.format}`
+      );
+      setImages(shuffleArray(imageUrls));
+    } catch (error) {
+      console.error('Erro ao buscar imagens do Cloudinary:', error);
+      setImages([]); // Evita mostrar imagens antigas se der erro
+    }
+  }, [tag]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    const fetchImages = async () => {
-      try {
-        const response = await axios.get(
-          `https://res.cloudinary.com/${CLOUD_NAME}/image/list/${TAG}.json`
-        );
-        const imageUrls = response.data.resources.map(img => 
-          `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/${img.public_id}.${img.format}`
-        );
-
-        // Aplica a função de embaralhamento antes de definir as imagens
-        setImages(shuffleArray(imageUrls));
-      } catch (error) {
-        console.error('Erro ao buscar imagens do Cloudinary:', error);
-      }
-    };
-
     fetchImages();
-  }, []);
+  }, [fetchImages]);
 
   const openImage = (index) => {
     setSelectedImage(images[index]);
@@ -90,17 +100,28 @@ const Books = () => {
       <div className="section-books">
         <div className="books-title">
           <h1>BOOKS</h1>
-          <p>Em Destaque</p>
+          <p>{tituloAtual}</p>
         </div>
-        <Divider width={"30%"} color={"var(--color-primary)"} thickness={"2px"} />
+        <Divider width={"30%"} color={"var(--color-primary)"} thickness={"2px"} margin={"20px 0px 10px 0px"}/>
+        <div className="cenarios-buttons">
+          {cenarios.map((c, idx) => (
+            <button
+              key={idx}
+              className={`cenario-button ${tag === c.tag ? 'active' : ''}`}
+              onClick={() => setTag(c.tag)}
+            >
+              {c.nome}
+            </button>
+          ))}
+        </div>
         <div className="book-panel">
           {images.length > 0 ? (
             images.map((src, index) => (
               <div key={index} className="book-photo-all" onClick={() => openImage(index)}>
-                <img 
+                <img
                   className="book-photo-horizontal"
-                  src={src} 
-                  alt={`Imagem ${index}`} 
+                  src={src}
+                  alt={`Imagem ${index}`}
                 />
               </div>
             ))

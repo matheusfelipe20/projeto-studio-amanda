@@ -24,6 +24,37 @@
     margin-bottom: 0px;
 }
 
+.cenarios-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 10px 0;
+}
+  
+.cenario-button {
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 2px solid var(--color-primary);
+    font-weight: 500;
+}
+  
+.cenario-button:hover {
+    background-color: var(--background-primary);
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.cenario-button.active {
+    background-color: var(--background-primary);
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
 .book-panel {
     display: flex;
     justify-content: center;
@@ -54,8 +85,14 @@
     width: 300px;
     height: 300px;
     object-fit: cover;
+    object-position: center top;
     user-select: none;
     -webkit-user-drag: none;
+    transition: transform 0.4s ease-in-out;
+}
+
+.book-photo-all:hover .book-photo-horizontal {
+  transform: scale(1.08);
 }
 
 .image-popup {
@@ -139,6 +176,19 @@
         margin-top: -20px;
     }
 
+    .cenarios-buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 10px 20px;
+    }
+      
+    .cenario-button {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
     .text-loading-image {
         height: 60vh;
     }
@@ -159,7 +209,7 @@
     }
 
     .book-panel {
-        margin-bottom: 0px;
+        margin: 10px 10px 0px 10px;
     }
     
     .book-panel > div {
