@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import axios from 'axios';
+import useTexts from '../../hooks/useTexts';
 
 import './CampaignSpecial.css'
 import HeaderSubDominio from '../../components/header/HeaderSubDominio';
@@ -13,6 +14,7 @@ const CampaignSpecial = () => {
   const [images, setImages] = useState([]);
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const texts = useTexts();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -82,10 +84,10 @@ const CampaignSpecial = () => {
         <div className="booksSpecial-hero">
           <div className="booksSpecial-overlay">
             <div className="booksSpecial-title">
-              <h1>Campanha Especial</h1>
-              <h2>Dia das Mães</h2>
+              <h1>{texts.TitlePage_CampaignSpecial}</h1>
+              <h2>{texts.SubTitlePage_CampaignSpecial}</h2>
               <Divider width={"20%"} color={"#fff"} thickness={"2px"} margin={"0px"}/>
-              <p>2025</p>
+              <p>{texts.Years_CampaignSpecial}</p>
             </div>
           </div>
         </div>

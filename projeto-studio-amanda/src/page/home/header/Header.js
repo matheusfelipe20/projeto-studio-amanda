@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import logoHeader from '../../../assets/img/logo.png';
+import useTexts from '../../../hooks/useTexts';
 
 const scrollToContact = () => {
     const contactSection = document.getElementById("contact");
@@ -11,6 +12,7 @@ const scrollToContact = () => {
 };
 
 const Header = () => {
+    const texts = useTexts();
     const [menuOpen, setMenuOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
@@ -35,11 +37,11 @@ const Header = () => {
                     <nav className={`header-nav ${menuOpen ? 'open' : ''}`}>
                         <ul>
                             <Link to="/books" onClick={() => setMenuOpen(false)}>
-                                <li><button className="nav-option separate-option">Galeria</button></li>
+                                <li><button className="nav-option separate-option">{texts.Option_Gallery_Header}</button></li>
                             </Link>
                             <li>
                                 <button className="nav-option" onClick={() => { scrollToContact(); setMenuOpen(false); }}>
-                                    Contato
+                                    {texts.Option_Contact_Header}
                                 </button>
                             </li>
                         </ul>
@@ -49,9 +51,9 @@ const Header = () => {
                 <nav>
                     <ul className="header-nav">
                         <Link to="/books">
-                            <li><button className="nav-option">Galeria</button></li>
+                            <li><button className="nav-option">{texts.Option_Gallery_Header}</button></li>
                         </Link>
-                        <li><button className="nav-option" onClick={scrollToContact}>Contato</button></li>
+                        <li><button className="nav-option" onClick={scrollToContact}>{texts.Option_Contact_Header}</button></li>
                     </ul>
                 </nav>
             )}

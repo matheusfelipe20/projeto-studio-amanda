@@ -1,20 +1,25 @@
-import React from 'react';
 import './Introduction.css';
+
+import useTexts from '../../../hooks/useTexts';
 import introPhoto from '../../../assets/img/photo-intro.webp';
 
-const Introduction = () => (
-    <div className="intro-container">
-        <img src={introPhoto} alt="Imagem de apresentação" />
+const Introduction = () => {
+    const texts = useTexts();
+
+    return (
+
+        <div className="intro-container">
+            <img src={introPhoto} alt="Imagem de apresentação" />
         <div className="overlay"></div>
         <div className="intro-text">
-            <h1>Eternizando seus melhores momentos</h1>
-            <p>Onde cada clique conta uma história</p>
+            <h1>{texts.TextIntro_Introduction}</h1>
+            <p>{texts.SubTextIntro_Introduction}</p>
         </div>
         <div className="intro-text-bottom">
-            <p>Studio Amanda Paiva</p>
+            <p>{texts.NameStudio}</p>
         </div>
     </div>
-
-);
+    );
+};
 
 export default Introduction;

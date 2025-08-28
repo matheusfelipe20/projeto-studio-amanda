@@ -20,15 +20,15 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   return (
-    <LanguageProvider>
-      <Router basename="/">
+    <Router basename="/">
+      <LanguageProvider>
         {loading ? (
           <LoadingHome onFinish={() => setLoading(false)} />
         ) : (
           <MainContent />
         )}
-      </Router>
-    </LanguageProvider>
+        </LanguageProvider>
+    </Router>
   );
 }
 
