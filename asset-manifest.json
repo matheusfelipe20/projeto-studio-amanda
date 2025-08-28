@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3d4dd00d.css",
-    "main.js": "/static/js/main.5c4abf89.js",
+    "main.css": "/static/css/main.f6f7d753.css",
+    "main.js": "/static/js/main.5b48ce22.js",
     "static/js/488.1c383460.chunk.js": "/static/js/488.1c383460.chunk.js",
     "static/media/photo-gallery-h2.png": "/static/media/photo-gallery-h2.b9b90add46739c9004f8.png",
     "static/media/photo-gallery-h3.png": "/static/media/photo-gallery-h3.88dfe9a8e7c913d646f8.png",
@@ -27,11 +27,6 @@
     "static/media/photo-intro.webp": "/static/media/photo-intro.33029c1c993ac02bbeaf.webp",
     "static/media/logo-brown.png": "/static/media/logo-brown.6f16d82f6edecfd47376.png",
     "static/media/logo.png": "/static/media/logo.d00fdca8bbc90eaf1f73.png",
-    "static/media/footer-awards-2023.webp": "/static/media/footer-awards-2023.99006e40048f9b9b7d59.webp",
-    "static/media/footer-awards-2024.webp": "/static/media/footer-awards-2024.1efd2cc51bbce65080d5.webp",
-    "static/media/footer-awards-2022.webp": "/static/media/footer-awards-2022.3e0ecc6033c61dd002dc.webp",
-    "static/media/footer-awards-2021.webp": "/static/media/footer-awards-2021.ddbf31de0b2cd0b0c69e.webp",
-    "static/media/br.svg": "/static/media/br.050b74316b0da55026c0578e6cd7faa2.svg",
     "static/media/whatsapp.svg": "/static/media/whatsapp.60b26700f9f53f3d8932122fa6470c11.svg",
     "static/media/whatsapp-footer.svg": "/static/media/whatsapp-footer.3ade3d8b6f7d24db7b9f9720a426cb25.svg",
     "static/media/instagram.svg": "/static/media/instagram.ece17d286f23a5138238291099879949.svg",
@@ -39,12 +34,12 @@
     "static/media/instagram-footer.svg": "/static/media/instagram-footer.932d4284344b7ac81c307f619a6f7381.svg",
     "index.html": "/index.html",
     "static/media/facebook.svg": "/static/media/facebook.e2cd2868fd0b34db7879e03469b61345.svg",
-    "main.3d4dd00d.css.map": "/static/css/main.3d4dd00d.css.map",
-    "main.5c4abf89.js.map": "/static/js/main.5c4abf89.js.map",
+    "main.f6f7d753.css.map": "/static/css/main.f6f7d753.css.map",
+    "main.5b48ce22.js.map": "/static/js/main.5b48ce22.js.map",
     "488.1c383460.chunk.js.map": "/static/js/488.1c383460.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d4dd00d.css",
-    "static/js/main.5c4abf89.js"
+    "static/css/main.f6f7d753.css",
+    "static/js/main.5b48ce22.js"
   ]
 }
