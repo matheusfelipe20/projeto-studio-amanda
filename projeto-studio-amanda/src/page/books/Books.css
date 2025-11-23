@@ -191,6 +191,16 @@
         margin-top: -20px;
     }
 
+    .cenarios-select-years {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .select-years {
+        padding: 4px;
+    }
+
     .cenarios-buttons {
         display: flex;
         justify-content: center;
