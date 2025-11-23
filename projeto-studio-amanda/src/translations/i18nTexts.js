@@ -19,9 +19,9 @@ const i18nTexts = {
         TitlePage_CatalogMenu: 'CENÁRIOS TEMÁTICOS',
         SubTitlePage_CatalogMenu: 'Comemorando cada data',
         
-        TitleCatalogSpecial_CatalogMenu: '📸 Especial das Mães 💕',
-        DescriptionCatalogSpecial_CatalogMenu: 'Conheça nosso novo cenário exclusivo para o Dia das Mães!',
-        ButtonViewGallery_CatalogMenu: 'Visualizar Galeria',
+        TitleCatalogSpecial_CatalogMenu: '🎄 Um Sonho de Natal ✨',
+        DescriptionCatalogSpecial_CatalogMenu: 'Conheça nossos novos cenários exclusivos para o Natal!',
+        ButtonViewGallery_CatalogMenu: 'Visualizar',
 
         TextBooks_CatalogMenu: '“O tempo passa, mas suas memórias não precisam”',
         Section_Books_CatalogMenu: 'Books',
