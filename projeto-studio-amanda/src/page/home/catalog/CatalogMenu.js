@@ -32,7 +32,7 @@ const CatalogMenu = () => {
                             <p className="catalog-description">
                                 {texts.DescriptionCatalogSpecial_CatalogMenu}
                             </p>
-                            <Link to="/books/dia+das+maes">
+                            <Link to="/books/natal-2025">
                                 <button className="catalog-button">{texts.ButtonViewGallery_CatalogMenu}</button>
                             </Link>
                         </div>

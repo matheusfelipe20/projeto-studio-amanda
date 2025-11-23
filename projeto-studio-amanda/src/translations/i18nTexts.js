@@ -2,8 +2,8 @@ const i18nTexts = {
     'pt-BR': {
 
         //CampaignSpecial
-        TitlePage_CampaignSpecial: 'Campanha Especial',
-        SubTitlePage_CampaignSpecial: 'Dia das Mães',
+        TitlePage_CampaignSpecial: 'Temática especial',
+        SubTitlePage_CampaignSpecial: 'Natal',
         Years_CampaignSpecial: '2025',
 
         // Header
